@@ -1,0 +1,7 @@
+使用SQLyog执行导入sql脚本文件时有如下错误：
+	Error occured at:2012-01-07 15:51:55
+	Line no.:61
+	Error Code 2006 - MySQL server has gone away
+
+原因1：max_allowed_packet的值太小，可以在my.ini中改为如下设置：
+	max_allowed_packet=64M 
